@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import classNames from "classnames";
+import { ReactNode } from 'react';
+import classNames from 'classnames';
 
 type ButtonProps = {
   children: ReactNode;
@@ -9,22 +9,22 @@ type ButtonProps = {
 };
 
 export const Button = ({
-  type = "primary",
+  type = 'primary',
   className,
   onClick,
   children,
 }: ButtonProps) => {
-  let colors = "bg-sp-secondary-500 hover:bg-sp-secondary-300";
+  let colors = 'bg-sp-secondary-500 hover:bg-sp-secondary-300';
 
   switch (type) {
-    case "primary":
-      colors = "bg-sp-secondary-500 hover:bg-sp-secondary-300";
+    case 'primary':
+      colors = 'bg-sp-secondary-500 hover:bg-sp-secondary-300';
       break;
-    case "secondary":
-      colors = "bg-sp-primary-500 hover:bg-sp-primary-300";
+    case 'secondary':
+      colors = 'bg-sp-primary-500 hover:bg-sp-primary-300';
       break;
     default:
-      colors = "bg-sp-secondary-500 hover:bg-sp-secondary-300";
+      colors = 'bg-sp-secondary-500 hover:bg-sp-secondary-300';
       break;
   }
 
@@ -34,9 +34,8 @@ export const Button = ({
       className={classNames(
         colors,
         className,
-        `w-fit inline-flex items-center justify-center py-[8px] px-10 tracking-wide transition-all duration-200 rounded-[28px] text-3xl shadow-md`
-      )}
-    >
+        `w-fit inline-flex items-center justify-center py-[8px] px-10 tracking-wide transition-all duration-200 rounded-[28px] text-sm md:text-xl lg:text-3xl shadow-md`
+      )}>
       {children}
     </button>
   );
