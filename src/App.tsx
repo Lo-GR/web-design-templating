@@ -11,7 +11,7 @@ function App() {
         <p>Headers</p>
         <HeaderOne />
       </div>
-      <div className="relative w-full mb-[120px]">
+      <div className="relative">
         <p>Heros</p>
         <HeroOne
           title={'RESULTS DRIVEN'}
@@ -22,7 +22,7 @@ function App() {
       </div>
       <div>
         Footers
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

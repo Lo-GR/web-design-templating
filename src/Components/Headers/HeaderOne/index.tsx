@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { LinkButton } from "../../Buttons/LinkButton";
-import { Button } from "../../Buttons/ButtonOne";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { LinkButton } from '../../Buttons/LinkButton';
+import { Button } from '../../Buttons/ButtonOne';
 
 export const Header = () => {
   const [validUser, setValidUser] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem("userData")) {
+    if (sessionStorage.getItem('userData')) {
       setValidUser(true);
     }
   });
 
   const handleLogout = () => {
     const requestOptions: any = {
-      method: "GET",
-      credentials: "include",
+      method: 'GET',
+      credentials: 'include',
     };
 
-    fetch("http://localhost:8080/api/users/logout", requestOptions)
+    fetch('http://localhost:8080/api/users/logout', requestOptions)
       .then((res) => {
-        sessionStorage.removeItem("userData");
-        return window.location.replace("/login");
+        sessionStorage.removeItem('userData');
+        return window.location.replace('/login');
       })
       .catch((err) => console.log(err));
   };
@@ -30,9 +30,9 @@ export const Header = () => {
     <div className="bg-sp-primary-500 h-[70px] ">
       <div className="container mx-auto px-8 flex flex-row  h-full">
         <div className="flex h-full items-center">
-          <Link to={"/"}>Logo</Link>
+          <Link to={'/'}>Logo</Link>
         </div>
-        {validUser ? (
+        {/* {validUser ? (
           <div className="flex flex-row w-full justify-end items-center h-full space-x-8">
             <LinkButton to={"/dashboard"}>Dashboard</LinkButton>
             <LinkButton to={"/signup"}>Profile</LinkButton>
@@ -43,7 +43,7 @@ export const Header = () => {
             <LinkButton to={"/login"}>Login</LinkButton>
             <LinkButton to={"/signup"}>Signup</LinkButton>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
