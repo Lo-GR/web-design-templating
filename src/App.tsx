@@ -12,13 +12,13 @@ function App() {
         <HeaderOne />
       </div>
       <div className="relative w-full mb-[120px]">
-        <p>Heros</p>
+        {/* <p>Heros</p>
         <HeroOne
           title={'RESULTS DRIVEN'}
           text={'DIGITAL MARKETING AGENCY'}
           buttonText={'GET MY FREE PROPOSAL >>'}
           backgroundImage={candleImage}
-        />
+        /> */}
       </div>
       <div>
         Footers
