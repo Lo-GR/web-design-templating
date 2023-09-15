@@ -1,13 +1,12 @@
-import Body from "./Components/Body";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import { Header as HeaderOne } from "../src/Components/Headers/HeaderOne";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <div>
+        <p>Headers</p>
+        <HeaderOne />
+      </div>
     </div>
   );
 }
