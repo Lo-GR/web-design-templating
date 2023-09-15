@@ -1,6 +1,7 @@
 import { Header as HeaderOne } from '../src/Components/Headers/HeaderOne';
 import { Hero as HeroOne } from '../src/Components/Heros/HeroOne';
 import { Footer } from './Components/Footers/FooterOne';
+import { HeroVideo } from './Components/Heros/HeroVideo';
 
 import candleImage from './images/candleTwo.jpg';
 
@@ -10,6 +11,7 @@ function App() {
       <div>
         <p>Headers</p>
         <HeaderOne />
+
       </div>
       <div className="relative">
         <p>Heros</p>
@@ -19,12 +21,13 @@ function App() {
           buttonText={'GET MY FREE PROPOSAL >>'}
           backgroundImage={candleImage}
         />
+        <HeroVideo youtubeId="12jBBOyRkvw" />
       </div>
       <div>
         Footers
         <Footer />
       </div>
-    </div>
+    </div >
   );
 }
 
