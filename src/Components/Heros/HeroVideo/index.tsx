@@ -38,7 +38,7 @@ const textVariants = {
 export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
   return (
     <div className="overflow-hidden relative w-full">
-      <div className="absolute isolate h-full w-full z-10 flex justify-center items-start left-1/4 flex-col">
+      <div className="absolute isolate h-full w-[4/5] z-10 flex justify-center items-start left-[10%] flex-col">
         <motion.p
           variants={titleVariants}
           initial="initial"
@@ -50,7 +50,7 @@ export const HeroVideo = ({ youtubeId, title, text }: HeroVideoProps) => {
           variants={textVariants}
           initial="initial"
           animate="visible"
-          className="text-[20px] lg:text-[80px] text-white font-inter">
+          className="text-[20px] lg:text-[70px] text-white font-inter">
           {text}
         </motion.p>
       </div>
