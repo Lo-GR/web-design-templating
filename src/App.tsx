@@ -11,7 +11,6 @@ function App() {
       <div>
         <p>Headers</p>
         <HeaderOne />
-
       </div>
       <div className="relative">
         <p>Heros</p>
@@ -21,13 +20,17 @@ function App() {
           buttonText={'GET MY FREE PROPOSAL >>'}
           backgroundImage={candleImage}
         />
-        <HeroVideo youtubeId="12jBBOyRkvw" />
+        <HeroVideo
+          youtubeId="xpVvBpgZvFE"
+          title="TNT RACING"
+          text="Something something, we gotta go fast something"
+        />
       </div>
       <div>
         Footers
         <Footer />
       </div>
-    </div >
+    </div>
   );
 }
 

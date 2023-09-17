@@ -20,6 +20,9 @@ module.exports = {
           500: '#FF3E36',
         },
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
