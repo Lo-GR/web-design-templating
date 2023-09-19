@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import './HeroVideo.css';
 
 type HeroVideoProps = {
   youtubeId: string;
